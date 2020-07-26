@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2015.4.2 (64-bit)
+# SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+# IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+# Start of session at: Mon Oct 03 15:01:46 2016
+# Process ID: 8872
+# Current directory: C:/sccb_vga/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8956 C:\sccb_vga\project_1\project_1.xpr
+# Log file: C:/sccb_vga/project_1/vivado.log
+# Journal file: C:/sccb_vga/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/sccb_vga/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210248585104]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210248585104]
+open_hw_target
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210248585104}
+set_property PROGRAM.FILE {C:/sccb_vga/project_1/project_1.runs/impl_1/OV7670_VGA_TOP.bit} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210248585104}
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/sccb_vga/project_1/project_1.runs/impl_1/OV7670_VGA_TOP.bit} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {C:/sccb_vga/project_1/project_1.runs/impl_1/OV7670_VGA_TOP.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {C:/BAKC/sc_OV7670/ov7670_verilog2/ov7670/work/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_bd_design {C:/sccb_vga/project_1/project_1.srcs/sources_1/bd/DPRAM/DPRAM.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_datamover:5.1 axi_datamover_0
+endgroup
+delete_bd_objs [get_bd_cells axi_datamover_0]
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210248585104]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210248585104]
+open_hw_target
+set_property PROGRAM.FILE {C:\BAKC\sc_OV7670\ov7670_verilog2\ov7670\work\ov7670_top.bit} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {C:/BAKC/sc_OV7670/ov7670_verilog2/ov7670/work/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {C:/BAKC/sc_OV7670/ov7670_verilog2/ov7670/work/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {C:/BAKC/sc_OV7670/ov7670_verilog2/ov7670/work/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+synth_design -rtl -name rtl_1
+write_schematic -format pdf -orientation portrait C:/Users/Administrator/Desktop/schematic.pdf
+write_schematic -format pdf -orientation portrait C:/Users/Administrator/Desktop/schematic.pdf
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210248585104]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210248585104]
+open_hw_target
+set_property PROGRAM.FILE {C:\BAKC\sc_OV7670\ov7670_verilog2\ov7670\work\ov7670_top.bit} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {C:/BAKC/sc_OV7670/ov7670_verilog2/ov7670/work/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]

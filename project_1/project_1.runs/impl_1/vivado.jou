@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Oct 30 00:32:54 2016
+# Process ID: 1444
+# Current directory: E:/OV7670_VGA/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log OV7670_VGA_TOP.vdi -applog -messageDb vivado.pb -mode batch -source OV7670_VGA_TOP.tcl -notrace
+# Log file: E:/OV7670_VGA/project_1/project_1.runs/impl_1/OV7670_VGA_TOP.vdi
+# Journal file: E:/OV7670_VGA/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source OV7670_VGA_TOP.tcl -notrace

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1477758627">
+  <File Type="OPT-DCP" Name="OV7670_VGA_TOP_opt.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="ROUTE-DCP" Name="OV7670_VGA_TOP_routed.dcp"/>
+  <File Type="OPT-DRC" Name="OV7670_VGA_TOP_drc_opted.rpt"/>
+  <File Type="ROUTE-PWR" Name="OV7670_VGA_TOP_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="OV7670_VGA_TOP.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-HWDEF" Name="OV7670_VGA_TOP.hwdef"/>
+  <File Type="PWROPT-DCP" Name="OV7670_VGA_TOP_pwropt.dcp"/>
+  <File Type="BG-DRC" Name="OV7670_VGA_TOP.drc"/>
+  <File Type="PLACE-DCP" Name="OV7670_VGA_TOP_placed.dcp"/>
+  <File Type="PLACE-IO" Name="OV7670_VGA_TOP_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="OV7670_VGA_TOP_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="OV7670_VGA_TOP_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="OV7670_VGA_TOP_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="OV7670_VGA_TOP_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="OV7670_VGA_TOP.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="OV7670_VGA_TOP_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="OV7670_VGA_TOP.bin"/>
+  <File Type="PHYSOPT-DCP" Name="OV7670_VGA_TOP_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="OV7670_VGA_TOP.vdi"/>
+  <File Type="ROUTE-CLK" Name="OV7670_VGA_TOP_clock_utilization_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="OV7670_VGA_TOP.msk"/>
+  <File Type="ROUTE-DRC" Name="OV7670_VGA_TOP_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="OV7670_VGA_TOP_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-SUM" Name="OV7670_VGA_TOP_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="OV7670_VGA_TOP_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="OV7670_VGA_TOP_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="OV7670_VGA_TOP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="OV7670_VGA_TOP_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="OV7670_VGA_TOP_timing_summary_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="OV7670_VGA_TOP_postroute_physopt.dcp"/>
+  <File Type="BG-BIT" Name="OV7670_VGA_TOP.bit"/>
+  <File Type="BITSTR-RBT" Name="OV7670_VGA_TOP.rbt"/>
+  <File Type="BITSTR-NKY" Name="OV7670_VGA_TOP.nky"/>
+  <File Type="BITSTR-BMM" Name="OV7670_VGA_TOP_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="OV7670_VGA_TOP.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="OV7670_VGA_TOP.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-PWR-RPX" Name="OV7670_VGA_TOP_power_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="OV7670_VGA_TOP_drc_routed.rpx"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/DPRAM/DPRAM.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/CLK/CLK.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sccb_sender.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/DPRAM_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/DPRAM/hdl/DPRAM_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1475420774"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/CLK_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/CLK/hdl/CLK_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1475421593"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cfg_regs.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_dpram.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/my_vga_syn.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/debounce.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_convert.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cfg_ov.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CAPTURE.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/OV7670_TOP.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="OV7670_VGA_TOP"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/pinset.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

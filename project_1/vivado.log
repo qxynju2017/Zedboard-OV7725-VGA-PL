@@ -1,0 +1,116 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct 11 19:25:57 2019
+# Process ID: 13172
+# Current directory: E:/FPGA_Test/Zedboard_proj/OV7725_VGA/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9720 E:\FPGA_Test\Zedboard_proj\OV7725_VGA\project_1\project_1.xpr
+# Log file: E:/FPGA_Test/Zedboard_proj/OV7725_VGA/project_1/vivado.log
+# Journal file: E:/FPGA_Test/Zedboard_proj/OV7725_VGA/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA_Test/Zedboard_proj/OV7725_VGA/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 963.234 ; gain = 254.387
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248446130
+open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1620.895 ; gain = 642.961
+set_property PROGRAM.FILE {E:/FPGA_Test/Zedboard_proj/OV7725_VGA/project_1/project_1.runs/impl_1/OV7670_VGA_TOP.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/FPGA_Test/Zedboard_proj/OV7725_VGA/project_1/project_1.runs/impl_1/OV7670_VGA_TOP.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248446130
+close_project
+create_project HDMI_test E:/FPGA_Test/Zedboard_proj/HDMI_test -part xc7z020clg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
+close_project
+open_project E:/FPGA_Test/Zedboard_proj/zedboard_adv7511_display_demo/zedboard_adv7511_display_demo/project_1/project_1.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/FPGA_Test/Zedboard_proj/zedboard_adv7511_display_demo/zedboard_adv7511_display_demo/project_1'
+INFO: [Project 1-313] Project file moved from 'G:/XilinxProject/vivado/zedboard_adv7511_display_demo/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_Test/Zedboard_proj/zedboard_adv7511_display_demo/zedboard_adv7511_display_demo/ADV7511_HDMI_OUT'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_clk_wiz_0_0
+design_1_processing_system7_0_1
+
+INFO: [Project 1-230] Project 'project_1.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1706.281 ; gain = 0.000
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip [get_ips  {design_1_clk_wiz_0_0 design_1_processing_system7_0_1}] -log ip_upgrade.log
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:user:hdmi_display:1.0 - hdmi_display_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.2 - clk_wiz_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out2(clk) and /hdmi_display_0/vga_clk_90(undef)
+Successfully read diagram <design_1> from BD file <E:/FPGA_Test/Zedboard_proj/zedboard_adv7511_display_demo/zedboard_adv7511_display_demo/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading 'E:/FPGA_Test/Zedboard_proj/zedboard_adv7511_display_demo/zedboard_adv7511_display_demo/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_DIVCLK_DIVIDE' from '5' to '6' has been ignored for IP 'design_1_clk_wiz_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKFBOUT_MULT_F' from '37.125' to '49.000' has been ignored for IP 'design_1_clk_wiz_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN1_PERIOD' from '10.000' to '10.0' has been ignored for IP 'design_1_clk_wiz_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN2_PERIOD' from '10.000' to '10.0' has been ignored for IP 'design_1_clk_wiz_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKOUT0_DIVIDE_F' from '10.000' to '11.000' has been ignored for IP 'design_1_clk_wiz_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKOUT1_DIVIDE' from '10' to '11' has been ignored for IP 'design_1_clk_wiz_0_0'
+WARNING: [IP_Flow 19-3501] Upgraded design_1_clk_wiz_0_0 from Clocking Wizard 5.2 to Clocking Wizard 6.0, with warnings. Please review the message log.
+WARNING: [IP_Flow 19-4707] Upgraded port order differs after port 'reset'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_clk_wiz_0_0'. These changes may impact your design.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /hdmi_display_0/vga_clk_90(undef) and /clk_wiz_0_upgraded_ipi/clk_out2(clk)
+INFO: [PS7-6] Configuring Board Preset part0. Please wait ......
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+INFO: [IP_Flow 19-3422] Upgraded design_1_processing_system7_0_1 (ZYNQ7 Processing System 5.5) from revision 3 to revision 6
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_clk_wiz_0_0' has identified issues that may require user intervention. Please review the upgrade log 'e:/FPGA_Test/Zedboard_proj/zedboard_adv7511_display_demo/zedboard_adv7511_display_demo/project_1/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <E:/FPGA_Test/Zedboard_proj/zedboard_adv7511_display_demo/zedboard_adv7511_display_demo/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <E:/FPGA_Test/Zedboard_proj/zedboard_adv7511_display_demo/zedboard_adv7511_display_demo/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/FPGA_Test/Zedboard_proj/zedboard_adv7511_display_demo/zedboard_adv7511_display_demo/project_1/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 1982.262 ; gain = 275.980
+export_ip_user_files -of_objects [get_ips {design_1_clk_wiz_0_0 design_1_processing_system7_0_1}] -no_script -sync -force -quiet
+close_project
+open_project E:/FPGA_Test/Zedboard_proj/OV7725_VGA/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1992.105 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 11 22:04:00 2019...
